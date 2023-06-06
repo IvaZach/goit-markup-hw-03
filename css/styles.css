@@ -1,6 +1,3 @@
-body {
-  font-family: 'Roboto', 'Helvetica Neue', 'Verdana', 'Tahoma', sans-serif;
-}
 :root {
   --bg-color-main: #2f303a;
   --accent-color: #2196f3;
@@ -17,15 +14,52 @@ body {
   --font-size-paragraph: 14px;
   --font-size-header: 16px;
 }
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 body {
+  font-family: 'Roboto', 'Helvetica Neue', 'Verdana', 'Tahoma', sans-serif;
   font-family: var(--font-family);
   font-style: normal;
   font-size: var(--font-size-paragraph);
+  margin: 0;
+}
+.container {
+  box-sizing: border-box;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /* outline: 1px solid tomato; */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.link {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 /* Header */
 .bg-header {
   background-color: var(--second-accent-color);
+  margin-bottom: 24px;
 }
+
 .logo {
   color: var(--accent-color);
   text-decoration: none;
@@ -34,12 +68,32 @@ body {
   font-size: 26px;
   line-height: 1.192;
   letter-spacing: 0.03em;
+  margin-right: 94px;
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
 .logo-part {
   color: #000000;
 }
-.link {
-  list-style-type: none;
+.logo-nav-flex {
+  display: flex;
+  align-items: center;
+}
+
+.nav-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+  
+.item {
+  margin-right: 50px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.item:last-child {
+  margin: 0;
 }
 .nav-link {
   color: var(--header-color);
@@ -48,6 +102,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .mail-link {
   color: var(--paragraph-color);
   text-decoration: none;
@@ -74,51 +129,19 @@ body {
 .current-page > a {
   color: var(--accent-color);
 }
-/* Footer */
-.footer {
-  background-color: var(--bg-color-main);
-}
-.logo-part-ft {
-  color: var(--second-accent-color);
-}
-.ft-address {
-  font-style: normal;
-}
-.adress-link-ft {
-  color: var(--second-accent-color);
-
-  text-decoration: none;
-  font-weight: var(--font-weight-paragraph);
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-}
-.mail-link-ft {
-  color: rgba(255, 255, 255, 0.6);
-
-  text-decoration: none;
-  font-weight: var(--font-weight-paragraph);
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-}
-.tel-link-ft {
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-  font-weight: var(--font-weight-paragraph);
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-}
-.adress-link-ft:focus,
-.adress-link-ft:hover,
-.mail-link-ft:focus,
-.mail-link-ft:hover,
-.tel-link-ft:focus,
-.tel-link-ft:hover {
-  color: var(--accent-color);
-}
 
 /* hero */
 .bg-hero {
   background-color: var(--bg-color-main);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: flex;
+
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 .header-hero {
   color: var(--second-accent-color);
@@ -129,7 +152,12 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   width: 696px;
+
+  display: inline-block;
+  margin-bottom: 30px;
+  /* outline: 1px solid tomato; */
 }
+
 .header-second {
   color: var(--header-color);
   font-size: var(--font-weight-header);
@@ -290,4 +318,46 @@ body {
 }
 .decoration {
   text-decoration: none;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--bg-color-main);
+}
+.logo-part-ft {
+  color: var(--second-accent-color);
+}
+.ft-address {
+  font-style: normal;
+}
+.address-link-ft {
+  color: var(--second-accent-color);
+
+  text-decoration: none;
+  font-weight: var(--font-weight-paragraph);
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+.mail-link-ft {
+  color: rgba(255, 255, 255, 0.6);
+
+  text-decoration: none;
+  font-weight: var(--font-weight-paragraph);
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+.tel-link-ft {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-weight: var(--font-weight-paragraph);
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+}
+.adress-link-ft:focus,
+.adress-link-ft:hover,
+.mail-link-ft:focus,
+.mail-link-ft:hover,
+.tel-link-ft:focus,
+.tel-link-ft:hover {
+  color: var(--accent-color);
 }

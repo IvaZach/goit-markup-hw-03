@@ -17,18 +17,25 @@
   </head>
   <body>
     <header class="bg-header">
-      <a href="./index.html" class="logo">Web<span class="logo-part">Studio</span></a>
-      <nav>
-        <ul class="link">
-          <li class="current-page"><a href="#" class="nav-link">Студія</a></li>
-          <li><a href="./portfolio.html" class="nav-link">Портфоліо</a></li>
-          <li><a href="#contacts" class="nav-link">Контакти</a></li>
+      <div class="container nav-flex">
+        <div class="logo-nav-flex">
+          <a href="./index.html" class="logo">Web<span class="logo-part">Studio</span></a>
+          <nav>
+            <ul class="link nav-flex">
+              <li class="item current-page"><a href="#" class="nav-link">Студія</a></li>
+              <li class="item"><a href="./portfolio.html" class="nav-link">Портфоліо</a></li>
+              <li class="item"><a href="#contacts" class="nav-link">Контакти</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <ul class="link nav-flex">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="mail-link">info@devstudio.com</a>
+          </li>
+          <li class="item"><a href="tel:+380961111111" class="tel-link">+38 096 111 11 11</a></li>
         </ul>
-      </nav>
-      <ul class="link">
-        <li><a href="mailto:info@devstudio.com" class="mail-link">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="tel-link">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
     <main>
       <!-- HERO -->
@@ -37,7 +44,7 @@
         <button type="button" class="button-service">Замовити послугу</button>
       </section>
       <!--About-->
-      <div class="about">
+      <div class="about container">
         <section class="section-about">
           <h2 class="visually-hidden">Specific company</h2>
           <ul class="link">
@@ -83,7 +90,8 @@
           </ul>
         </section>
       </div>
-      <section class="our-team">
+      <!-- Our team -->
+      <section class="container our-team">
         <h2 class="header-second">Наша команда</h2>
         <ul class="link">
           <li class="our-team-list">
@@ -109,6 +117,7 @@
         </ul>
       </section>
     </main>
+    <!-- Footer -->
     <footer class="footer">
       <a href="./index.html" class="logo">Web<span class="logo-part-ft">Studio</span></a>
       <address id="contacts" class="ft-address">
@@ -118,7 +127,7 @@
               href="https://goo.gl/maps/rEXAgXgdKfEQJtbBA?coh=178573&amp;entry=tt"
               target="_blank"
               rel="noopener noreferrer"
-              class="adress-link-ft"
+              class="address-link-ft"
               >м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
