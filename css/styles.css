@@ -29,6 +29,7 @@ body {
   font-style: normal;
   font-size: var(--font-size-paragraph);
   margin: 0;
+  background-color: var(--second-accent-color);
 }
 .container {
   box-sizing: border-box;
@@ -57,7 +58,7 @@ p {
 /* Header */
 .bg-header {
   background-color: var(--second-accent-color);
-  margin-bottom: 24px;
+  
 }
 
 .logo {
@@ -84,9 +85,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
 }
-  
+
 .item {
   margin-right: 50px;
   margin-top: 32px;
@@ -155,7 +155,6 @@ p {
 
   display: inline-block;
   margin-bottom: 30px;
-  /* outline: 1px solid tomato; */
 }
 
 .header-second {
@@ -165,16 +164,26 @@ p {
 .button-service {
   color: var(--second-accent-color);
   font-weight: var(--font-weight-header);
+  font-family: var(--font-family);
   font-size: 16px;
+  line-height: 1.88;
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
-  width: 216px;
-  height: 50px;
+  /* width: 216px;
+  height: 50px; */
+
+  padding: 10px 32px;
   cursor: pointer;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
+
 /* About */
 .about {
-  background-color: #f5f5f5;
+  background-color: var(--second-accent-color);
+  padding-top: 70px;
+  
 }
 .visually-hidden {
   position: absolute;
@@ -189,6 +198,12 @@ p {
   margin: -1px;
 }
 
+/* Specific company */
+.flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 94px;
+}
 .header-second {
   color: var(--header-color);
   font-weight: var(--font-weight-header);
@@ -196,7 +211,10 @@ p {
   line-height: 1.67;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
 }
+
 .header-about {
   color: var(--header-color);
   font-weight: var(--font-weight-header);
@@ -204,6 +222,8 @@ p {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 .header-about-paragraph {
   color: var(--paragraph-color);
@@ -214,9 +234,10 @@ p {
 .header-about-list {
   width: 270px;
   height: 98px;
+  /* outline: 1px solid tomato; */
 }
 
-/* About work */
+/* About our work */
 
 .header-about-work-list {
   width: 370px;
@@ -227,11 +248,14 @@ p {
 
 .our-team {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+
 .our-team-list {
   background: var(--second-accent-color);
   width: 270px;
-  height: 368px;
+  /* height: 368px; */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -240,34 +264,38 @@ p {
   color: var(--header-color);
   font-weight: var(--font-weight-nav);
   font-size: var(--font-size-header);
-  line-height: 1.19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-top: 30px;
 }
 .our-team-paragraph {
   color: var(--paragraph-color);
   font-weight: var(--font-weight-paragraph);
   font-size: var(--font-size-header);
-  line-height: 1.19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 /* Portfolio */
-.nav-list-portfolio-first {
-  height: 38px;
-  background-color: var(--accent-color);
-  border-color: #f5f4fa;
-  padding: 6px 22px;
-  color: var(--second-accent-color);
-  text-decoration: none;
-  font-family: inherit;
-  font-weight: var(--font-weight-nav);
-  font-size: var(--font-size-header);
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-  cursor: pointer;
+.nav-portfolio {
+  display: flex;
+  justify-content: center;
+
+  
+  /* !!!!!!!!!!!!!!!!! */
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: greenyellow;
+  outline: 1px solid orange;
 }
+
 .nav-list-portfolio {
   background-color: #f5f4fa;
   border-color: #f5f4fa;
@@ -280,6 +308,25 @@ p {
   line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+
+  /* !!!!!!!!!!!!!!!!! */
+  margin-bottom: 50px;
+  margin-top: 94px;
+  display: inline-block;
+
+  outline: 1px solid orange;
+}
+.all {
+  background-color: var(--accent-color);
+  color: var(--second-accent-color);
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!! */
+.nav-list-portfolio:not(:last-child) {
+  margin-right: 8px;
 }
 
 .nav-list-portfolio:focus,
@@ -287,18 +334,32 @@ p {
   background-color: var(--accent-color);
   color: var(--second-accent-color);
 }
-.nav-list-portfolio-first:focus,
-.nav-list-portfolio-first:hover {
+.all:focus,
+.all:hover {
   background-color: #f5f4fa;
   color: var(--header-color);
 }
+.exzamples-portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 94px;
 
+  background-color: tomato;
+}
 .exsamples-list {
   background-color: var(--second-accent-color);
-  box-sizing: border-box;
+
   width: 370px;
   height: 404px;
   border: 1px solid #eeeeee;
+
+  
+}
+.exsamples-item {
+  padding: 20px 24px;
 }
 .exsamples-header {
   color: var(--header-color);
@@ -319,10 +380,30 @@ p {
 .decoration {
   text-decoration: none;
 }
+/* .decoration:focus,
+.decoration:hover {
+
+} */
 
 /* Footer */
 .footer {
   background-color: var(--bg-color-main);
+}
+.ft {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.logo-ft {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-family: 'Raleway';
+  font-weight: var(--font-weight-header);
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+
+  display: inline-block;
+  margin-bottom: 20px;
 }
 .logo-part-ft {
   color: var(--second-accent-color);
@@ -337,6 +418,9 @@ p {
   font-weight: var(--font-weight-paragraph);
   line-height: 1.714;
   letter-spacing: 0.03em;
+
+  display: inline-block;
+  margin-bottom: 9px;
 }
 .mail-link-ft {
   color: rgba(255, 255, 255, 0.6);
@@ -345,6 +429,9 @@ p {
   font-weight: var(--font-weight-paragraph);
   line-height: 1.714;
   letter-spacing: 0.03em;
+
+  display: inline-block;
+  margin-bottom: 9px;
 }
 .tel-link-ft {
   color: rgba(255, 255, 255, 0.6);
@@ -352,9 +439,11 @@ p {
   font-weight: var(--font-weight-paragraph);
   line-height: 1.714;
   letter-spacing: 0.03em;
+
+  display: inline-block;
 }
-.adress-link-ft:focus,
-.adress-link-ft:hover,
+.address-link-ft:focus,
+.address-link-ft:hover,
 .mail-link-ft:focus,
 .mail-link-ft:hover,
 .tel-link-ft:focus,
