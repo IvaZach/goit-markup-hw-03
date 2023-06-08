@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -39,13 +43,14 @@
     </header>
     <main>
       <!-- HERO -->
-      <section class="bg-hero">
+      <section class="section-bg-hero">
         <h1 class="header-hero">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="button-service">Замовити послугу</button>
       </section>
+
       <!--About-->
-      <div class="about container">
-        <section class="section-about">
+      <section class="section">
+        <div class="container">
           <h2 class="visually-hidden">Specific company</h2>
           <ul class="link flex">
             <li class="header-about-list">
@@ -73,9 +78,11 @@
               </p>
             </li>
           </ul>
-        </section>
-        <!--About our work-->
-        <section class="section-work">
+        </div>
+      </section>
+      <!--About our work-->
+      <section class="section work">
+        <div class="container">
           <h2 class="header-second">Чим ми займаємося</h2>
           <ul class="link flex">
             <li class="header-about-work-list">
@@ -88,33 +95,36 @@
               <img src="./images/box3.jpg" alt="Планшет в руці" width="370" />
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
+
       <!-- Our team -->
-      <section class="container our-team">
-        <h2 class="header-second">Наша команда</h2>
-        <ul class="link flex">
-          <li class="our-team-list">
-            <img src="./images/imgpd1.jpg" alt="Фотографія продакт дизайнера" width="270" />
-            <h3 class="our-team-name">Ігор Дем'яненко</h3>
-            <p class="our-team-paragraph">Product Designer</p>
-          </li>
-          <li class="our-team-list">
-            <img src="./images/imgfd1.jpg" alt="Фотографія фронтенд розробника" width="270" />
-            <h3 class="our-team-name">Ольга Рєпіна</h3>
-            <p class="our-team-paragraph">Frontend Developer</p>
-          </li>
-          <li class="our-team-list">
-            <img src="./images/imgm1.jpg" alt="Фотографія маркетолога" width="270" />
-            <h3 class="our-team-name">Микола Тарасов</h3>
-            <p class="our-team-paragraph">Marketing</p>
-          </li>
-          <li class="our-team-list">
-            <img src="./images/imguid1.jpg" alt="Фотографія UI дизайнера" width="270" />
-            <h3 class="our-team-name">Михайло Єрмаков</h3>
-            <p class="our-team-paragraph">UI Designer</p>
-          </li>
-        </ul>
+      <section class="section our-team">
+        <div class="container">
+          <h2 class="header-second">Наша команда</h2>
+          <ul class="link flex">
+            <li class="our-team-list">
+              <img src="./images/imgpd1.jpg" alt="Фотографія продакт дизайнера" width="270" />
+              <h3 class="our-team-name">Ігор Дем'яненко</h3>
+              <p class="our-team-paragraph">Product Designer</p>
+            </li>
+            <li class="our-team-list">
+              <img src="./images/imgfd1.jpg" alt="Фотографія фронтенд розробника" width="270" />
+              <h3 class="our-team-name">Ольга Рєпіна</h3>
+              <p class="our-team-paragraph">Frontend Developer</p>
+            </li>
+            <li class="our-team-list">
+              <img src="./images/imgm1.jpg" alt="Фотографія маркетолога" width="270" />
+              <h3 class="our-team-name">Микола Тарасов</h3>
+              <p class="our-team-paragraph">Marketing</p>
+            </li>
+            <li class="our-team-list">
+              <img src="./images/imguid1.jpg" alt="Фотографія UI дизайнера" width="270" />
+              <h3 class="our-team-name">Михайло Єрмаков</h3>
+              <p class="our-team-paragraph">UI Designer</p>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <!-- Footer -->
