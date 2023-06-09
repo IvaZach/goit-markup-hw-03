@@ -169,6 +169,9 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+.button-service:active {
+  background-color: #188ce8;
+}
 
 /* About */
 
@@ -389,7 +392,6 @@ img {
 
   width: 370px;
   height: 404px;
-  
 }
 .exsamples-item {
   padding: 20px 24px;
