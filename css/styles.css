@@ -389,12 +389,13 @@ img {
 
   width: 370px;
   height: 404px;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
+  
 }
 .exsamples-item {
   padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 .exsamples-header {
   color: var(--header-color);
